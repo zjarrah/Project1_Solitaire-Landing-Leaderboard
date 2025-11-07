@@ -1,5 +1,6 @@
 const BASE_URL = "http://localhost/Project1_Solitaire-Landing-Leaderboard/solitaire-server/APIs/client/";
 
+getScores(5)
 async function getScores(value_limit){
     try{
         const url = BASE_URL + "get_scores.php";
@@ -10,6 +11,10 @@ async function getScores(value_limit){
         });
 
         console.log(response);
+        const jsonData = response.data;
+        const container = document.getElementById("table-container");
+        container.innerHTML = ""; // Clear previous content
+        container.appendChild(createTableFromJSON(jsonData));
     } catch {
         console.log("Error!");
     }
@@ -23,6 +28,7 @@ async function addScore(value_name){
         });
 
         console.log(response);
+        document.getElementById("confirmation").textContent = "Entry submitted";
     } catch {
         console.log("Error!");
     }
@@ -63,6 +69,3 @@ function createTableFromJSON(data) {
     return table;
 }
 
-const jsonData = getScores(value_limit);
-const container = document.getElementById("table-container");
-container.appendChild(createTableFromJSON(jsonData));
