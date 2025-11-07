@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #2c3e50;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 2em;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  background: #ecf0f1;
+  background-image: url("../Images/Hero_background.png");
+}
+
+.hero-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-right: 2em;
+}
+
+.hero-images img {
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.hero-content a {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #00ff9d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Leaderboard Table */
+.leaderboard {
+  margin: 2em auto;
+  width: 80%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.leaderboard th, .leaderboard td {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.leaderboard th {
+  background-color: #06773f;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+  margin-top: 2em;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
