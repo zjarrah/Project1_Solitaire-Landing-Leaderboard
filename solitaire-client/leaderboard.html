@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/style.css">
+        <title>Solitaire Download</title>
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Download Solitaire Now</h1>
+                <p>Download our beautifully designed solitaire game and enjoy hours of relaxing gameplay. Challenge yourself and climb the leaderboard!</p>
+            </div>
+            <div class="hero-images">
+                <a href="https://apps.apple.com/ca/app/solitaire/id359917414" target="_blank">
+                    <img src="Images/App_store_badge.svg" alt="App store badge" style="width:150px;height:50px;"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.mobilityware.solitaire" target="_blank">
+                    <img src="Images/Google_store_badge.png" alt="Google Play store badge" style="width:150px;height:50px;"></a>
+            </div>
+        </section>
+
+        <!-- Leaderboard Table -->
+        <div id="table-container"></div>
+
+        <!-- Input score -->
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <input type="submit" value="Submit" onclick="addScore(value_name)">
+
+        <!-- Footer -->
+        <footer>
+            <p>Contact us: 📞 +1-800-555-1234 | 📧 support@solitairegame.com</p>
+        </footer>
+        
+
+        <script src="/Scripts/axios.min.js"></script>
+        <script src="/Scripts/scripts.js"></script>"
+    </body>
+</html>
