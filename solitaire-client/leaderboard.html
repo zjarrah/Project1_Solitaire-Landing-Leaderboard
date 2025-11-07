@@ -36,8 +36,8 @@
 
         <!-- Input score -->
         <label for="name">Name:</label><br>
-        <input type="text" name="name" required><br><br>
-        <input type="submit" value="Submit" onclick="addScore(value_name)">
+        <input id="input-field" type="text" name="name" required><br><br>
+        <input type="submit" value="Submit" onclick="addScore(document.getElementById('input-field').textContent)">
         <p id="confirmation"></p>
 
         <!-- Footer -->
