@@ -35,10 +35,12 @@
         <br><div id="table-container"></div><br>
 
         <!-- Input score -->
-        <label for="input-field">Name:</label><br>
-        <input type="text" id="input-field" required><br><br>
-        <input type="submit" value="Submit" onclick="addScore(document.getElementById('input-field').value)">
-        <p id="confirmation"></p>
+        <div class="score-input">
+            <label for="input-field">Name:</label><br>
+            <input type="text" id="input-field" required><br><br>
+            <input type="submit" value="Submit" onclick="addScore(document.getElementById('input-field').value)">
+            <p id="confirmation"></p>
+        </div>
 
         <!-- Footer -->
         <footer>
