@@ -32,12 +32,12 @@
         </section>
 
         <!-- Leaderboard Table -->
-        <div id="table-container"></div>
+        <br><div id="table-container"></div><br>
 
         <!-- Input score -->
-        <label for="name">Name:</label><br>
-        <input id="input-field" type="text" name="name" required><br><br>
-        <input type="submit" value="Submit" onclick="addScore(document.getElementById('input-field').textContent)">
+        <label for="input-field">Name:</label><br>
+        <input type="text" id="input-field" required><br><br>
+        <input type="submit" value="Submit" onclick="addScore(document.getElementById('input-field').value)">
         <p id="confirmation"></p>
 
         <!-- Footer -->
@@ -46,7 +46,8 @@
         </footer>
         
 
-        <script src="/Scripts/axios.min.js"></script>
-        <script src="/Scripts/scripts.js"></script>"
+        <script src="Scripts/axios.min.js"></script>
+        <script src="Scripts/scripts.js"></script>
+        <script>insertScoresHtmlTable("table-container")</script>
     </body>
 </html>
