@@ -8,10 +8,10 @@ if(isset($_GET["limit"])){
 }
 
 if($limit == -1){
-    $sql = "SELECT * FROM scores ORDER BY score DESC, time ASC";
+    $sql = "SELECT name, score, time FROM scores ORDER BY score DESC, time ASC";
     $query = $mysql->prepare($sql);
 }else{
-    $sql = "SELECT * FROM scores ORDER BY score DESC, time ASC LIMIT ?";
+    $sql = "SELECT name, score, time FROM scores ORDER BY score DESC, time ASC LIMIT ?";
     $query = $mysql->prepare($sql);
     $query->bind_param("i", $limit);
 }
